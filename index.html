@@ -173,7 +173,7 @@
                     type: 'array'
                 })
                 try {
-                    FileSaver.saveAs(new Blob([wbout], {
+                    saveAs(new Blob([wbout], {
                         type: 'application/octet-stream'
                     }), 'export.xlsx')
                 } catch (e) {
